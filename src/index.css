@@ -291,7 +291,7 @@ ul .tag{
 
 @media screen and (max-width:767px) {
     .navbar{
-        width: 100%;
+        width: 100vw;
         height: auto;
         background-color: var(--primColor);
         margin: auto;
