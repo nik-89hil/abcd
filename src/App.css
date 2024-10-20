@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: -10;
+    overflow: hidden;
+
+}
+
+.container video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    /* position: relative;
+    z-index: +5; */
+}
+
+.controls {
+    /* border: 1px solid white; */
+    display: inline-block;
+    position: absolute;
+    z-index: +10;
+    bottom: 0;
+    left: 2vw;
+}
+
+.slide-title {
+    display: inline-block;
+    position: absolute;
+    z-index: +10;
+    top: 20vh;
+    left: 2vw;
+    font-size: var(--fontsize3);
+}
+
+.slide-title p {
+    color: var(--glassplus);
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.heading {
+    color: var(--glassplus);
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-block: 10vh;
+    position: absolute;
+    top: 10vh;
+    left: 2vw
+}
+
+.animeFlight {
+    width: 100%;
+    height: auto;
+    background-color: var(--glassplus);
+    position: sticky;
+    z-index: 1;
+}
+
+.animeFlight video {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+
+.flightBox {
+    width: 100%;
+    margin: auto;
+    margin-top: 15vh;
+}
+
+.flightCard {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-block: 1vh;
+}
+
+.flightCard .a1 {
+    width: 80%;
+    min-width: 320px;
+    height: 300px;
+    margin: auto;
+    border-radius: var(--radii);
+    padding-inline: .8rem;
+
+}
+
+.a1 .flicon {
+    font-size: var(--fontsize3);
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+
+}
+
+
+.addFli {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+
+.hotelCon {
+    margin-top: 15vh;
+}
+
+.hotelCon p {
+    width: 80%;
+    margin: auto;
+    padding-block: .4rem;
+}
+
+.hash i {
+    font-size: var(--fontsize2);
+    margin: 10px 5px;
+}
+
+
+/* 
+.international .headingTop{
+   color: blue;
+}
+
+.domestic .headingTop{
+    color: red;
+} */
+
+
+.headingTop {
+    color: var(--primColor);
+    font-size: var(--fontsize3);
+    text-align: center;
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primColor);
+    border-radius: var(--radii);
+    transition: backgound .1s ease-in-out;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(198, 198, 245);
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    margin-top: 25vh;
+    background-color: var(--primColor);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem .4rem;
+}
+
+.address{
+    width: 50%;
+    display: inline-block;
+    /* border: 2px solid blue; */
+    padding: .9rem .3rem;
+    text-align: center;
+}
+
+.address p,
+.address a{
+    color: black;
+    font-size: var(--fontsize);
+    font-weight:600;
+    padding: .4rem;
+}
+
+.address a{
+    text-decoration: underline;
+}
+
+.address i{
+    color: black;
+}
+
+
+.usefuLink{
+    width: 50%;
+    align-items: center;
+}
+
+
+
+
+
+.usefuLink p i,
+.usefuLink p,
+.usefuLink a,
+.connecter h2{
+    color: black;
+    font-weight: 600;
+}
+
+.usefuLink a{
+    text-decoration: underline;
+}
+
+.social{
+    width: 100%;
+}
+
+.social a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-inline: 5px;
+}
+
+.social img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.connecter{
+    text-align: center;
+}
+
+
+.linker{
+    text-align: center;
+}
+
+.copyright{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.logo2{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: rgb(219, 219, 17);
+    margin: auto;
+    
+}
+
+.logo2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    user-select: none;
+}
+
+.promotion{
+   width: 100%;
+   height: 10vh;
+   margin: auto;
+   background-color: var(--primColor);
+}
+
+.probox{
+    width: 90%;
+    height: auto;
+    padding: .4rem;
+    margin: auto;
+    background-color: rgb(219, 219, 17);
+    border-radius: 25px;
+}
+
+.probox h2{
+    color: black;
+    text-align: center;
+    font-size: var(--fontsize2);
+    font-weight: var(--fonthigd);
+}
+
+.probox a{
+    font-size: var(--fontsize);
+    text-decoration: underline;
+}
+
+/* .insCont{
+ width: 100%;
+ margin-top: 15vh;
+} */
+
+
+@media screen and (max-width:767px){
+    .flightCard {
+        width: 100%;
+        height: auto;
+        margin-block: 8vh;
+      
+    }
+
+    .flightCard .a1{
+        height: auto;
+        margin-block: 5vh;
+    }
+    .address{
+        width: 100%;
+    }
+    .usefuLink{
+        width: 100%;
+    }
+    .promotion{
+        height: auto;
+    }
+}

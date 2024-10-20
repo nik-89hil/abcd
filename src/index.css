@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Reddit Sans Condensed", sans-serif;
+    font-optical-sizing: auto;
+    --fontmedd:400;
+    --fonthigd:700;
+    font-style: normal;
+    --fontsize:18px;
+    --fontsize2:22px;
+    --fontsize3:100px;
+    --glass: rgba(59, 59, 59, 0.64);
+    --radii:10px;
+    --glassplus:rgba(170, 160, 160, 0.64);
+    --primColor:white;
+    --darkCol:black;
+    user-select: none;
+}
+
+body{
+    background-color: black;
+    font-size: var(--fontsize);
+    user-select: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+button{
+    background-color:var(--glass);
+    border: none;
+    font-size: var(--fontmedd);
+    border-radius: var(--radii);
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    margin: 5px;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    margin-top: .7rem;
+    padding-inline: 2rem;
+    padding-block: .2rem;
+    background-color: transparent;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid white; */
+    position: fixed;
+    top: 0;
+    z-index: +80;
+}
+
+
+ul .tag{
+    width: 150px; 
+    font-size: var(--fontsize2);
+    background-color: var(--glass);
+    border-radius: var(--radii);
+    font-weight: 800;
+    opacity: 1;
+    
+}
+
+.icon i{
+    color: white !important;
+    margin-inline: .7rem;
+}
+
+
+
+
+/*  
+
+.showMenu{
+    display: none;
+}
+
+*/
+
+
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: white;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.logo img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+    scale: 1.2;
+}
+
+.leftBar{
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag{
+    color: var(--primColor);
+    font-weight: 800;
+    font-size: var(--fontsize2);
+    background-color: var(--glass);
+    padding: .2rem .7rem;
+    border-radius: var(--radii);
+}
+
+.showMenu{
+    cursor: pointer;
+}
+
+.rightBar{
+    width:500px;
+    display: flex;
+    background-color: var(--glass);
+    margin: 5px;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem .4rem;
+    border-radius: var(--radii);
+}
+
+.rightBar i{
+    margin: 5px;
+    color: rgb(209, 207, 207);
+}
+
+
+.btn{
+    background-color: var(--primColor) !important;
+}
+
+.btn a{
+    color:var(--darkCol) !important;
+    font-weight: 600;
+}
+
+.contact{
+    display: inline-block;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: var(--glass);
+    border-radius: var(--radii);
+    padding: .4rem;
+    margin-bottom: .9rem;
+    margin-right: .9rem;
+}
+
+/* .contact p{
+    padding-inline: .3rem;
+    padding-block: .4rem;
+} */
+
+.contact a{
+    display: block;
+    /* border: 2px dashed white; */
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: auto;
+    margin-block: 6px;
+}
+
+.contact a img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    scale: .9;
+}
+
+.insCont{
+    margin-top: 15vh;
+}
+
+.traDes{
+    width: 80%;
+    background-color: orange;
+    font-weight: 700;
+    margin: auto;
+    margin-top: 15vh;
+    padding: 1rem ;
+    font-size: var(--fontsize);
+    border-radius: var(--radii);
+    line-height: 5vh;
+}
+
+.visaCont{
+    width: 100%;
+    text-align: center;
+
+}
+
+.process{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pro1,
+.pro2,
+.pro3,
+.pro4{
+    width: 250px;
+    height: 300px;
+    background-color: var(--primColor);
+    margin: .9rem;
+    border-radius: var(--radii);
+    box-shadow: 2px 2px 20px;
+    position: relative;
+}
+
+.visaCover{
+    width: 150px;
+    height:150px;
+    border-radius: 100%;
+    background-color: var(--primColor);
+    margin: auto;
+    margin-top: 2vh;
+    border: 2px solid orange;
+}
+
+.visaCover img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+
+.steps{
+    width: 100px;
+    color: var(--primColor);
+    font-weight: 700;
+    margin: auto;
+    padding: .4rem;
+    background-color: orange;
+    text-align: center;
+    margin-top: 2vh;
+    border-radius: var(--radii);
+    
+}
+
+.headVisa{
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-block: .4rem;
+    font-weight: 700;
+    border-radius: var(--radii);
+}
+
+.traCover{
+    width: 100%;
+    height: 60%;
+    border-radius: var(--radii);
+}
+
+
+.traCover img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.visaInt,
+.packInt{
+    width: 80%;
+    margin: auto;
+    margin-block: 5vh;
+    font-size: var(--fontsize2);
+}
+
+@media screen and (max-width:767px) {
+    .navbar{
+        width: 100%;
+        height: auto;
+        background-color: var(--primColor);
+        margin: auto;
+        border-radius: var(--radii);
+        padding-inline: 0;
+        padding-block: 0;
+        display: block;
+        position: fixed;
+        top: -10;
+    }
+    .leftBar{
+        width: 100%;
+    }
+    .rightBar{
+        width:90%;
+        height: auto;
+        display: block;
+        margin:auto;
+        margin-bottom: 5vh;
+    }
+
+    .icon i{
+        color: black !important;
+    }
+
+    .rightBar p{
+        margin-block: 2vh;
+        padding: .5rem;
+        font-size: var(--fontsize2);
+        transition: all .3 ease-in-out;
+    }
+    .rightBar p:hover{
+        background-color: var(--primColor);
+        border-radius: var(--radii);
+    }
+
+    .rightBar p:hover a{
+        color: black;
+    }
+
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+
+    
+
+    
+
+
+
+}
